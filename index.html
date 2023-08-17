@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProseMirror Playground</title>
+    <link rel=stylesheet href="https://prosemirror.net/css/editor.css">
+</head>
+
+<body>
+    <div id="editor" style="margin-bottom: 23px"></div>
+
+    <div style="display: none" id="content">
+        <h2>Hello ProseMirror</h2>
+
+        <blockquote data-color="red">
+            red
+        </blockquote>
+
+        <blockquote data-color="lightblue">
+            lightblue
+        </blockquote>
+
+        <h2></h2>
+
+        <h2>Case 1</h2>
+
+        <blockquote data-color="orange">
+            orange
+        </blockquote>
+        <blockquote data-color="orange">
+        </blockquote>
+
+
+        <h2>Case 2</h2>
+
+        <blockquote data-color="pink">
+            pink
+            <blockquote data-color="orange">
+                orange
+            </blockquote>
+            <blockquote data-color="orange">
+            </blockquote>
+        </blockquote>
+
+        <h2>Case 3</h2>
+
+        <blockquote data-color="teal">
+            teal
+            <blockquote data-color="pink">
+                pink
+                <blockquote data-color="orange">
+                    orange
+                </blockquote>
+                <blockquote data-color="orange">
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </div>
+
+    <script type="module" src="/src/main.ts" defer></script>
+</body>
+
+</html>
